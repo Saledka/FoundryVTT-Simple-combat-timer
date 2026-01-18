@@ -1,0 +1,88 @@
+/* Standard HUD Style (Clean) with Fixed Portrait/Token Proportions, No Header, No Box, No Timer Numbers */
+
+#combat-timer-hud {
+  font-family: sans-serif;
+  background: rgba(25, 25, 25, 0.9);
+  border: 2px solid #444;
+  border-radius: 12px;
+  padding: 8px;
+  color: #eee;
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+/* Remove header completely */
+#combat-timer-hud .ct-header {
+  display: none !important;
+}
+
+#combat-timer-hud .ct-body {
+  text-align: center;
+}
+
+/* Token/portrait displayed directly, no box */
+#combat-timer-hud .ct-token {
+  width: 280px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;   /* ✅ keeps proportions */
+  display: block;
+  margin: 0 auto 6px;
+  background: none;
+  border: none;
+}
+
+#combat-timer-hud .ct-name {
+  font-weight: 900;
+  font-size: 26px;   /* ✅ bigger text */
+  margin: 6px 0;
+  color: #fff;
+  text-shadow: 0 0 6px rgba(0,0,0,0.7); /* ✅ improves readability */
+}
+
+/* Hide the timer numbers */
+#combat-timer-hud .ct-time {
+  display: none !important;
+}
+
+#combat-timer-hud .ct-bar {
+  height: 12px;
+  border-radius: 6px;
+  background: #333;
+  margin: 6px 0;
+  overflow: hidden;
+  border: 1px solid #555;
+}
+
+#combat-timer-hud .ct-fill {
+  height: 100%;
+  background: linear-gradient(to right, #66ccff, #0066cc);
+  width: 0%;
+  transition: width 0.2s linear;
+}
+
+#combat-timer-hud .ct-foot {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+#combat-timer-hud .ct-btn {
+  background: #444;
+  color: #eee;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#combat-timer-hud .ct-btn:hover {
+  background: #666;
+}
+
+/* Minimized state */
+#combat-timer-hud.minimized .ct-token,
+#combat-timer-hud.minimized .ct-name {
+  display: none;
+}
