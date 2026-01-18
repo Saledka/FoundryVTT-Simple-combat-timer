@@ -22,7 +22,7 @@
     }
   ],
   "url": "https://github.com/Saledka/FoundryVTT-Simple-combat-timer",
-  "manifest": "https://raw.githubusercontent.com/yourname/combat-timer/main/module.json",
-  "download": "https://github.com/yourname/combat-timer/archive/refs/heads/main.zip",
+  "manifest": "https://raw.githubusercontent.com/Saledka/FoundryVTT-Simple-combat-timer/refs/heads/main/combat-timer/module.json",
+  "download": "https://github.com/Saledka/FoundryVTT-Simple-combat-timer/tree/main/combat-timer.zip",
   "flags": {}
 }
