@@ -1,0 +1,28 @@
+{
+  "id": "combat-timer",
+  "title": "Simple Combat Timer",
+  "description": "<p>A per-turn combat timer that shows as a HUD, appears when combat starts, and auto-skips turns on timeout.</p>",
+  "version": "1.1.4",
+  "authors": [
+    {
+      "name": "saleddka",
+      "flags": {}
+    }
+  ],
+  "compatibility": {
+    "minimum": "11",
+    "verified": "13"
+  },
+  "esmodules": [
+    "scripts/timer.js"
+  ],
+  "styles": [
+    {
+      "src": "styles/timer.css"
+    }
+  ],
+  "url": "https://github.com/Saledka/FoundryVTT-Simple-combat-timer",
+  "manifest": "https://raw.githubusercontent.com/yourname/combat-timer/main/module.json",
+  "download": "https://github.com/yourname/combat-timer/archive/refs/heads/main.zip",
+  "flags": {}
+}

@@ -1,0 +1,126 @@
+/* ============================
+   Combat Timer — Pure Image HUD (Auto Height, Adaptive Text)
+   ============================ */
+
+#combat-timer-hud,
+#combat-timer-hud * {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+#combat-timer-hud {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  outline: none;
+  filter: none;
+}
+
+/* No header */
+#combat-timer-hud .ct-header {
+  display: none;
+}
+
+/* Body becomes positioning context */
+#combat-timer-hud .ct-body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+}
+
+/* Image defines size */
+#combat-timer-hud .ct-token {
+  display: block;
+  width: 256px;
+  height: auto;
+
+  object-fit: cover;
+
+  border-radius: 0 40px 0 0;
+
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Shared text styling */
+#combat-timer-hud .ct-name,
+#combat-timer-hud .ct-time {
+  position: absolute;
+  bottom: 10px;
+  
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  font-optical-sizing: auto;
+
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1 !important;
+  filter: none !important;
+  color: #ffffff;
+
+  display: inline-block;
+  margin: 0;
+
+  /* ADAPTIVE line height */
+  line-height: 1.2;
+
+  padding: 0;
+  background: none;
+
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.9),
+    0 0 4px rgba(0, 0, 0, 0.6);
+
+  pointer-events: none;
+
+  /* Prevent cropping on top */
+  transform: translateY(-2px);
+}
+
+/* Name — left */
+#combat-timer-hud .ct-name {
+  left: 6px;
+}
+
+/* Time — right */
+#combat-timer-hud .ct-time {
+  right: 6px;
+}
+
+/* Progress bar — INSIDE image, at very bottom */
+#combat-timer-hud .ct-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 6px; /* increased from 4px to give more text space */
+
+  background: rgba(255, 255, 255, 0.25);
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Progress fill */
+#combat-timer-hud .ct-fill {
+  height: 100%;
+  width: 0%;
+  background: #ffffff;
+  transition: width 0.15s linear;
+}
+
+/* No footer */
+#combat-timer-hud .ct-foot {
+  display: none;
+}
+
+/* Minimized = hidden */
+#combat-timer-hud.minimized {
+  display: none;
+}

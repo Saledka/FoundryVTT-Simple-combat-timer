@@ -1,0 +1,6 @@
+[
+  { "id":"default", "name":"Default", "file":"timer.css", "preview":"timer.png", "description":"Minimal default style" },
+  { "id":"deafaultclean", "name":"Deafault Clean", "file":"deafaultclean/deafaultclean.css", "preview":"deafaultclean/deafaultclean.png", "description":"Slightly more clean standart style" },
+  { "id":"glass", "name":"Glass", "file":"glass/glass.css", "preview":"glass/glass.png", "description":"Only portrait, name and timer. No controls or dragging, just visually pleasing option." },
+  { "id":"experimental", "name":"Experimental", "file":"experimental/experimental.css", "preview":"experimental/experimental.png", "description":"Random experiments, do not use." }
+]
